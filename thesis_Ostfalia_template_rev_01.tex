@@ -1,0 +1,44 @@
+\documentclass[a4paper,english,oneside,openright,12pt]{book}	%Dokumentenklasse festlegen, A4, einseitig ...
+
+\include{chapters/declare/declare}
+
+
+\begin{document}
+\pagestyle{empty}
+\include{chapters/titlepage/titlepage}				      	 	% Titelseite und Eidesstattliche Erkl�rung einf\"ugen
+ 
+             
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\pagestyle{plain}
+\tableofcontents 												%Inhaltsverzeichnis einf\"ugen
+\cleardoublepage
+
+\listoftables
+\protect \addcontentsline{toc}{chapter}{Tabellenverzeichnis}	%Tabellenbverzeichnis einf\"ugen
+\cleardoublepage
+
+\listoffigures
+\protect \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}	%Abbildungsverzeichnis einf\"ugen
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Nomenklatur} 					%Nomenklatur einf\"ugen
+\include{chapters/nomenclature/nomenclature}
+
+\pagenumbering{arabic}											%arabische Zahlen zur Numerierung
+\setcounter{page}{1} 											%Start mit Seite 1			 
+
+\include{chapters/chapter_1/chapter_1}							%Fuege hier die einzelnen Kapitel ein
+\include{chapters/chapter_2/chapter_2}
+\include{chapters/chapter_3/chapter_3}							%Kapitel 3 2D/3D-Line Charts
+
+\bibliography{chapters/bib/litbank1}  			                % Verweis auf Literaturdatenbank *.bib* - muss im gleichen Ordner sein!
+
+      
+\nocite{*} 														%Alle Dokumente anzeigen
+\bibliographystyle{natdin}  
+\setlength{\bibsep}{3mm}                 						% Abstaende im Literaturverzeichnis
+\addcontentsline{toc}{chapter}{Literaturverzeichnis} 
+
+\end{document}

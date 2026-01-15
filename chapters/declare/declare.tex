@@ -1,0 +1,71 @@
+\usepackage{avant} 							%Avant als normale Schrift 
+\usepackage[helvet]{sfmath} 					%serifenfreie Schrift f\"ur Mathmode
+
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[onehalfspacing]{setspace}			% Das brauchen eigentlich nur Leute, die
+                                							% viel zu kleine R\UTF{00E4} verwenden oder keine
+                                							% Korrekturzeichen beherrschen
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc} 					% Zeichensatz, ermöglicht die direkte Eingabe von Umlauten im Editor
+\usepackage[pdftex]{graphicx} 					% Einbindung von Grafiken (pdf, png, jpg)
+\usepackage{float}            					         % bietet Option [H] für bombenfestes Verankern
+\usepackage[ngerman]{babel}   					% Silbentrennung nach der neuen deutschen Rechtschreibung, z.B.: Sys-tem
+\usepackage{amstext}          					% für Klartext via \text{} in Formeln
+\usepackage{amsfonts} 
+\usepackage{amsmath}        				         % für komplexere Formeln (Mengensymbole ...)
+\usepackage{amssymb}        					 % für komplexere Formeln (Mengensymbole ...)
+\usepackage{bm}           					         % bold math, für \bm{}
+\usepackage{enumerate}        					% verbessert Aufzählungen
+\usepackage[bottom]{footmisc} 					% Fussnoten am Seitenende
+\usepackage{array}            					% für Tabellen: bindet tabular-Umgebung ein
+\usepackage{algorithm}        					% für Algorithmen
+\usepackage{algorithmic}      					% für Algorithmen
+\usepackage{ntheorem}
+\usepackage{theorem}
+\usepackage{pdfpages}         					% für die Einbindung kompletter pdf-*Seiten*
+\usepackage{parskip}          					% zw. Absätzen: eine knappe Leerzeile statt hängender Einzüge
+\usepackage[right]{eurosym}   					% Eurosymbol
+\usepackage{xcolor}           					% farbiger Text
+\usepackage{color}
+\definecolor{OBlue}{rgb}{0.0,0.2,0.4}
+\definecolor{OOrange}{rgb}{1.0,0.55,0.0}
+\PassOptionsToPackage{hyphens}{url}    					% für \url{http://www}, Option hyp erlaubt auch Umbruch nach "-"
+\usepackage[colorlinks=true,linkcolor=OBlue]{hyperref}			%Farbe Dunkelrot definieren
+%\usepackage{colortbl}
+%\usepackage{makeidx}          					% Package zur Indexerstellung
+%\usepackage{multicol}         					% zur Indexerstellung in zwei Spalten
+\usepackage[numbers, square]{natbib}   			% Für \setlength{\bibsep}{3mm}; square macht eckige Klammern
+\usepackage{wasysym}
+\usepackage{pdfpages}						%Einf\"ugen von externen PDF-Dokumenten
+\usepackage{epstopdf}
+\usepackage[nice]{nicefrac}					%f\"ur Br\"uche im Text
+\usepackage{fancyhdr}						%Kopf und Fu{\ss}zeile erm\"oglichen
+\usepackage[T1]{fontenc}
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+\changefont{ptm}{m}{n}
+\linespread {1.5}	
+
+\sloppy  
+\usepackage{titlesec}
+\titleformat{\chapter}{\bf\Huge}{\thechapter\quad}{0em}{}                     					
+
+%%%%%%%%%%%%%%%%
+%Anpassung Inhaltsverzeichnis
+%\usepackage{tocstyle}[2008/10/20]				%allwithdot oder noonewithdot verwenden
+%\usetocstyle{noonewithdot} 					%ohne Punkte im Verzeichnis
+
+\usepackage{verbatim}
+
+% Größenanpassungen
+\setlength{\unitlength}{1cm}
+\setlength{\oddsidemargin}{0.3cm}
+\setlength{\evensidemargin}{0.3cm}
+\setlength{\textwidth}{16cm}
+\setlength{\topmargin}{-1.2cm}
+\setlength{\textheight}{23cm}
+\columnsep 0.5cm
+
+\makeindex 									% erstelle einen Index bzw. ein Sachverzeichnis)
+\hyphenation{Samm-lung-en Samm-lung Stau-beck-en Vor-na-me-in-i-ti-al % Ver-st\"ar-ker-aus-gang 
+Nach-na-me Kurz-be-zeich-nung deutsch-spra-chige deutsch-sprachig Screen-shot Screen-shots schluss-end-lich Schluss-end-lich Make-In-dex Da-tei-name Da-tei-namen Ur-instinkt Ur-instinkte}
